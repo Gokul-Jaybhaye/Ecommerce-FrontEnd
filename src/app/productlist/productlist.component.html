@@ -1,0 +1,34 @@
+<!--<p>Name: {{name}}</p>
+<p>${{Price}}</p>
+<p>Color:Blue</p>
+<p>Discount Price:$200</p>-->
+<!--String Interpoltion Using varibes
+<p>Name:{{product.name1}}</p>
+<p>Price:{{"$"+ product.price}}</p>
+<p>Discount :{{product.price -(product.price * product.Discount /100)}}</p>
+<br>-->
+<!-- bind- or[] we can use these to bind property bind-value="Iname"
+we can bind attribute by using attr for example[attr.arial-hidden] 
+-->
+<div class="ecart">
+    <!--<img [src]="product2.Pic" alt="Image" height="150px">
+    <p>Name:{{product2.name}}</p>
+    <p>Price:{{"$"+ product2.price}}</p>
+    <p>Discount :{{getDiscount().toFixed(2)}}</p>
+    <p>{{product2.inStock>0 ? 'Only'+' ' + product2.inStock +' '+'Items Left' :'Items Not Left In Stock'}}</p>
+--><!--<button [disabled]="!(product2.inStock>0)">Buy Now</button>-->
+  <!--<button [disabled]="addCart==0" (click)="decrementV()">-</button>
+  <span>{{addCart}}</span>
+  <button  (click)="increment()">+</button>
+    <input type="text" (input)="onClick($event)">
+    <br>
+    <p>name={{Iname}}</p>-->
+    <app-search (SearchTextchange)="setSearhtext($event)"></app-search>
+    <!--ngFor Directive
+    <div *ngFor="let item of listofString">
+          <p> Current elemet of item:{{item}}</p>
+    </div>-->
+    <app-product-info [searchText]="searchText"></app-product-info>
+    <product-detail></product-detail>
+</div>
+<!--Event Binding=Data flows from viewTemplate to Component -->

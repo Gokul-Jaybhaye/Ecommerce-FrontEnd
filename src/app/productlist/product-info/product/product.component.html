@@ -1,0 +1,21 @@
+<!--*ngFor="let prod of product ; let i=index"-->
+    <div class="ecard-product-items" >
+        <div class="ecard-whishlit-sale">
+            <div class="ecard-add-to-whishlist">
+                <i class="fa-solid fa-cart-shopping"></i>
+              
+            </div>
+          <div class="ecard-sale-tag" >75% OFF</div> 
+        </div>
+        <div class="ecard--product-image">
+            <img [src]="product.imageURL" alt="Imagess" class="ecatd-product-image" >
+        </div>
+        <div class="ecard-add-to-price">
+            {{product.price}}
+        </div>
+        <div class="product-name">{{product.name}}</div>
+        <div class="product-category">{{product.gender}},{{product.category}},{{product.brand}}</div>
+        <div class="available-color">{{product.color.length}}</div>
+        <div class="product-available" [ngStyle]="{fontweight: 'bold', color:product. is_in_inventory?'black':'red' }">
+            {{product. is_in_inventory?'Available In stock':'Not Able In Stock'}}</div>
+    </div>

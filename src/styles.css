@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+/*@import "node_modules\bootstrap\dist\css\bootstrap.min.css"*/
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }

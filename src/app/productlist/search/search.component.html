@@ -1,0 +1,7 @@
+<div class="search">
+    <input  class="ecart-search"  #searchInput>
+
+    <button class="search-btn" (click)=" onClick(searchInput)">Search</button>
+
+</div>
+<div class="search-result"><p *ngIf="searchText !=''"><Strong>Search result For:</Strong> {{searchText}}</p></div>
